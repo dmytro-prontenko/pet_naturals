@@ -33,3 +33,14 @@ window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
 const mask = new IMask(phone, {
   mask: "+{38}(000)000-00-00",
 });
+
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

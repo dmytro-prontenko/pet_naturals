@@ -45,9 +45,6 @@
 html {
   font-family: Roboto;
   font-weight: 700;
-}
-
-.body {
   scroll-behavior: smooth;
 }
 
@@ -72,8 +69,10 @@ html {
   font-size: 30px;
 }
 
+/* #region header  */
 .header {
   background-image: url("../images/header/header-bg.webp");
+
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -105,6 +104,67 @@ html {
   background: transparent;
   border: none;
 }
+
+.hero {
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__title {
+  color: #f9e994;
+  text-align: center;
+}
+
+.hero__subtitle {
+  color: #f6f7e4;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.hero__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #7fb3e1;
+  color: #dfe4de;
+  padding: 20px 20px 20px 35px;
+}
+
+.hero__features-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.hero__features-list-item::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+
+  height: 20px;
+  width: 20px;
+
+  background-image: url("../images/hero/paw-dark.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Set the list image as background image*/
+
+/* #endregion */
 
 /* #region about */
 .about {
@@ -194,7 +254,7 @@ html {
   top: 0;
   left: 0;
   background: white;
-  background-image: url('../images/header/header-bg.webp');
+  background-image: url("../images/header/header-bg.webp");
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -326,5 +386,62 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
+}
+/* #endregion */
+
+/* #region to-top*/
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s;
+  z-index: 100;
+}
+
+.to-top-icon {
+  width: 8px;
+  height: 16px;
+  fill: var(--text-color);
+}
+
+.to-top:hover {
+  box-shadow: 1px 1px 25px 10px var(--reviews-card-text);
+}
+
+.to-top.active {
+  bottom: 20px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .to-top {
+    width: 68px;
+    height: 68px;
+    /* background-image: url('../../img/to-top-btn/arrow-big.svg'), url('../../img/to-top-btn/gradient.png'); */
+    right: 32px;
+  }
+
+  .to-top-icon {
+    width: 16px;
+    height: 30px;
+    fill: var(--text-color);
+  }
+
+  .to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
 /* #endregion */
