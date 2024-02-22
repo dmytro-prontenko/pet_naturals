@@ -193,7 +193,8 @@ html {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: var(--background-color);
+  background: white;
+  background-image: url('../images/header/header-bg.webp');
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -208,8 +209,7 @@ html {
 }
 .mobile-modal-container {
   position: relative;
-  padding-top: 27px;
-  padding-bottom: 24px;
+  padding: 15px 25px;
   height: 100%;
 }
 
@@ -268,12 +268,12 @@ html {
 }
 .mobile-modal-btn-close {
   position: absolute;
-  top: 24px;
-  right: 20px;
+  top: 20px;
+  right: 25px;
   cursor: pointer;
   color: var(--text-color);
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
   padding: 0;
   line-height: 0;
 }
@@ -293,7 +293,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 14px;
-  margin-top: 140px;
+  margin-top: 50%;
 }
 .mobile-modal-item {
   font-size: 14px;
