@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Pet naturals</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#">
+          <img
+            class="nav__main-logo"
+            src="src/images/header/header_logo.webp"
+            alt="Main logo"
+          />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__list-link">
+            <a href="#order">Order</a>
+          </li>
+          <li class="nav__list-link">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__list-link">
+            <a href="#result">Results</a>
+          </li>
+        </ul>
+        <button
+          class="nav__burger-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Burger menu button"
+        >
+          <img src="src/images/header/burger-menu-48.webp" alt="" />
+        </button>
+      </nav>
+
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero__title">Pet Naturals of Vermont, Calming, For Cats</h1>
+          <div class="hero__wrapper">
+            <div class="hero__descr">
+              <h4 class="hero__subtitle">
+                Your cat deserves the best pet supplement the world has to offer.
+                That's what's in the package. Features a patented calming blend
+                Doesn't contain herbal ingredients Helps manage everyday stress
+              </h4>
+              <ul class="hero__features">
+                <li class="hero__feature">Features a patented calming blend</li>
+                <li class="hero__feature">Doesn't contain herbal ingredients</li>
+                <li class="hero__feature">Helps manage everyday stress</li>
+              </ul>
+            </div>
+            <form
+              class="hero__form"
+              name="signup_form"
+              autocomplete="on"
+              id="order"
+            >
+              <h3 class="hero__form-title">TIME LEFT</h3>
+              <p class="hero__form-timer">HERE WILL BE TIMER</p>
+              <div class="hero__form-price">
+                <div class="hero__form-price-old">120uah</div>
+                <div class="hero__form-price-current">60uah</div>
+              </div>
+              <label>
+                  Email
+                  <input class="hero_form-name" type="text" name="Name" required />
+                </label>
+                <label>
+                  Phone
+                  <input
+                    class="hero_form-phone"
+                    type="tel"
+                    pattern="\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="+38(0__)___-__-__"
+                    placeholder="+38(0__)___-__-__"
+                    name="hero_form-phone"
+                    id="hero_form-phone"
+                    required
+                  />
+                </label>
+              <button type="submit">Order</button>
+              <p class="hero__form-date">Insert today date</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="about__title section-title" id="about">
+            From the manufacturer
+          </h2>
+          <ul class="about__list">
+            <li class="about__list-item">
+              <div class="about__list-item-card">
+                <img
+                  class="about__list-item-card-image"
+                  src="src/images/about/sleeping-cat.webp"
+                  alt="Sleeping cat"
+                />
+                <div class="about__list-item-card-descr">
+                  <h4 class="about__list-item-card-descr-title">
+                    Keep Calm and Carry On
+                  </h4>
+                  <div class="about__list-item-card-descr-content">
+                    Are you searching for a better way to ease your pet's
+                    separation anxiety or stress? Calming chews help relieve pet
+                    stress without corn, wheat or artificial ingredients.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="about__list-item">
+              <div class="about__list-item-card">
+                <img
+                  class="about__list-item-card-image"
+                  src="src/images/about/green-logo.webp"
+                  alt="Peace of mind logo"
+                />
+                <div class="about__list-item-card-descr">
+                  <h4 class="about__list-item-card-descr-title">Peace of Mind</h4>
+                  <div class="about__list-item-card-descr-content">
+                    Pet Naturals of Vermont's research-backed formula makes it
+                    safe to double or triple the amount in times of added stress.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="about__list-item">
+              <div class="about__list-item-card">
+                <img
+                  class="about__list-item-card-image"
+                  src="src/images/about/fish-meal.webp"
+                  alt="Fish formed meal"
+                />
+                <div class="about__list-item-card-descr">
+                  <h4 class="about__list-item-card-descr-title">
+                    More than a Tasty Treat
+                  </h4>
+                  <div class="about__list-item-card-descr-content">
+                    Don't let its satisfying chicken liver flavor fool you.
+                    Technically, Calming isn't a treat but it sure tastes like
+                    one. Reward your best buddy with a Calming chew.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="result section " id="result">
+        <div class="container">
+          <h2 class="result__title section-title" id="result">
+            Best Uses for Calming Chews
+          </h2>
+          <div class="result__descr-wrapper">
+            <div class="result__descr-content">
+              Car rides. Vet visits. Thunderstorms. Boarding. Parties. These are
+              just a handful of times when Calming chews may come in handy. Does
+              your dog hate to be left home alone? Does your cat love hiding under
+              the bed? Serve up a Calming chew to help soothe your furry pal's
+              anxiety and make your life easier, too! For Best Results: We
+              recommend administering Calming chews 30 minutes prior to a
+              stressful event. The 30-minute activation period gives you a chance
+              to increase dosage if you're not seeing expected results. Calming is
+              safe for unique stress inducing events and for long-term use to help
+              manage everyday stress.
+            </div>
+            <img src="src/images/result/cat.webp" alt="Cat with doctor" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <div class="mobile-modal js-menu-container" id="mobile-menu">
+      <div class="mobile-modal-container container">
+        <a class="mobile-modal-logo-link link" href="./index.html">
+          ht Adventures</span></a
+        >
+
+        <button type="button" class="mobile-modal-btn-close js-close-menu">
+        </button>
+
+        <ul class="mobile-modal-list">
+          <li class="mobile-modal-item">
+            <a class="mobile-modal-link" href="#order">Order</a>
+          </li>
+          <li class="mobile-modal-item">
+            <a class="mobile-modal-link" href="#about">About</a>
+          </li>
+          <li class="mobile-modal-item">
+            <a class="mobile-modal-link" href="#result">Result</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
