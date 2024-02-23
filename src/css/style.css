@@ -52,20 +52,14 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 748px;
-    /* max-width: px; */
     margin: 0 auto;
-    /* padding-left: 389px;
-    padding-right: 389px; */
   }
 }
 
 @media screen and (min-width: 1140px) {
   .container {
     min-width: 1120px;
-    /* max-width: px; */
     margin: 0 auto;
-    /* padding-left: 389px;
-    padding-right: 389px; */
   }
 
   .hero-padding {
@@ -121,8 +115,6 @@ body {
   padding: 0;
   list-style: none;
   text-decoration: none;
-
-  /* TODO mediaquery */
 }
 
 .nav__burger-menu {
@@ -377,7 +369,6 @@ body {
 
   .hero__form-wrapper {
     grid-area: order;
-    /* width: 50%; */
   }
 
   .hero__subtitle {
@@ -428,10 +419,6 @@ body {
 
   .hero__wrapper {
     align-items: end;
-    /* position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 444px; */
   }
 
   .hero-subwrapper {
@@ -443,14 +430,12 @@ body {
   }
 
   .hero__descr {
-    /* margin-top: 12px; */
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: 439px;
     height: 428px;
     gap: 60px;
-    /* justify-content: space-between; */
   }
 
   .hero__form-wrapper {
@@ -505,9 +490,6 @@ body {
 
 .about__list {
   list-style: none;
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -525,7 +507,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* height: 439px; */
 
   background-color: #f6e791;
   font-size: 14px;
@@ -541,7 +522,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* gap: 15px; */
 
   border-radius: 20px;
   background: rgba(161, 211, 55, 0.4);
@@ -568,25 +548,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding: 15px 0;
-  /* line-height: normal; */
 }
 
 @media screen and (min-width: 768px) {
   .about__list {
-    /* flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; */
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
-    /* grid-row-gap: 30px; */
   }
 
   .about__list-item-card {
-    /* width: calc(748px / 3 - 2 * 15px); */
     height: 459px;
   }
 
@@ -601,20 +573,10 @@ body {
   }
 
   .about__list {
-    /* flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; */
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 85px;
-    /* grid-row-gap: 30px; */
-  }
-
-  .about__list-item-card {
-    /* width: calc(748px / 3 - 2 * 5px); */
   }
 
   .about__list-item {
@@ -718,20 +680,6 @@ body {
   border-bottom: 1px solid rgba(246, 245, 239, 0.2);
 }
 
-.modal-logo {
-  margin-right: 8px;
-  width: 16px;
-  height: 18px;
-  fill: url(#linear);
-}
-.modal-logo-text {
-  transition: color var(--transition-duration-250)
-    var(--transition-timing-function);
-}
-.modal-logo-text:hover,
-.modal-logo-text:focus {
-  color: var(--button-light-background);
-}
 .mobile-modal-btn-close {
   position: absolute;
   top: 20px;
@@ -747,10 +695,6 @@ body {
   transition: stroke 250ms var(--transition-duration-250)
     var(--transition-timing-function);
 }
-/* .mobile-modal-btn-icon:hover,
-.mobile-modal-btn-icon:focus {
-  stroke: url(#linear);
-} */
 
 .mobile-modal-list {
   display: flex;
@@ -775,10 +719,6 @@ body {
   font-size: 20px;
   text-decoration-line: underline;
 }
-/* .mobile-modal-link:hover,
-.mobile-modal-link:focus {
-  color: #463900;
-} */
 
 @media screen and (min-width: 768px) {
   .mobile-modal {
@@ -830,11 +770,10 @@ body {
 .to-top-icon {
   width: 8px;
   height: 16px;
-  /* fill: var(--text-color); */
 }
 
 .to-top:hover {
-  box-shadow: 1px 1px 25px 10px black;
+  box-shadow: 1px 1px 25px 10px #483C08;
 }
 
 .to-top.active {
@@ -868,7 +807,6 @@ body {
 
 .result {
   background-image: url("../images/result/result-bg.png");
-  /* background-size: cover; */
   background-size: auto 100%;
   padding-bottom: 60px;
 }
