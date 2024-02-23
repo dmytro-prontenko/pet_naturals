@@ -80,14 +80,15 @@ html {
 }
 
 .overlay::before {
-  content: '';
-    display: block;
-    position: absolute;
-    top: 0px; left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 
 .header__content-wrapper {
@@ -121,11 +122,14 @@ html {
 }
 
 .hero {
+  padding-bottom: 30px;
 }
 
 .hero__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -177,7 +181,106 @@ html {
   background-position: center;
 }
 
-/* Set the list image as background image*/
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  border-radius: 20px 20px 10px 10px;
+  background: #fdfcfc;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  border-radius: 20px 20px 10px 10px;
+  background: #fdfcfc;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__form-wrapper svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__form-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 24px 53px;
+  /* width: 100%; */
+  background-clip: border-box;
+  background-image: url("../images/hero/form-top.webp");
+  background-size: 103%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero__form-title {
+  color: #483c08;
+
+  font-size: 33px;
+
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero__form-timer {
+  color: #f6e791;
+  font-size: 36px;
+}
+
+.hero__form-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero__form-price-old {
+  color: #6b6b6b;
+  font-size: 30px;
+}
+
+.hero__form-price-current {
+  color: #483c08;
+  font-size: 36px;
+}
+
+.hero__form-input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background: rgba(243, 239, 239, 0.9);
+}
+
+.hero__form-submit {
+  background-color: #a1d337;
+  padding: 7px 63px 8px;
+  border-radius: 20px;
+
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__form-date {
+  color: #444;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 20px;
+}
 
 /* #endregion */
 

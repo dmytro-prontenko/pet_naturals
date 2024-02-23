@@ -39,19 +39,20 @@
             <img src="src/images/header/burger-menu-48.webp" alt="" />
           </button>
         </nav>
-        <section class="hero section">
+
+        <section class="hero section hero-padding">
           <div class="container">
             <div class="hero__wrapper">
-              <h2 class="hero__title section-title" id="about">
+              <h1 class="hero__title section-title">
                 Pet Naturals of Vermont, Calming, For Cats
-              </h2>
+              </h1>
               <div class="hero__descr">
-                <h4 class="hero__subtitle">
+                <h2 class="hero__subtitle">
                   Your cat deserves the best pet supplement the world has to
-                  offer. That's what's in the package. Features a patented calming
-                  blend Doesn't contain herbal ingredients Helps manage everyday
-                  stress
-                </h4>
+                  offer. That's what's in the package. Features a patented
+                  calming blend Doesn't contain herbal ingredients Helps manage
+                  everyday stress
+                </h2>
                 <ul class="hero__features-list">
                   <li class="hero__features-list-item">
                     Features a patented calming blend
@@ -64,43 +65,48 @@
                   </li>
                 </ul>
               </div>
-              <form
-                class="hero__form"
-                name="signup_form"
-                autocomplete="on"
-                id="order"
-              >
-                <h3 class="hero__form-title">TIME LEFT</h3>
-                <p class="hero__form-timer">HERE WILL BE TIMER</p>
-                <div class="hero__form-price">
-                  <div class="hero__form-price-old">120uah</div>
-                  <div class="hero__form-price-current">60uah</div>
+
+              <div class="hero__form-wrapper">
+                <div class="hero__form-top-wrapper">
+                  <h3 class="hero__form-title">TIME LEFT</h3>
+                  <p class="hero__form-timer">2:00:00</p>
+                  <div class="hero__form-price">
+                    <div class="hero__form-price-old">120uah</div>
+                    <div class="hero__form-price-current">60uah</div>
+                  </div>
                 </div>
-                <label>
-                  Email
-                  <input
-                    class="hero_form-name"
-                    type="text"
-                    name="Name"
-                    required
-                  />
-                </label>
-                <label>
-                  Phone
-                  <input
-                    class="hero_form-phone"
-                    type="tel"
-                    pattern="\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="+38(0__)___-__-__"
-                    placeholder="+38(0__)___-__-__"
-                    name="hero_form-phone"
-                    id="hero_form-phone"
-                    required
-                  />
-                </label>
-                <button type="submit">Order</button>
-                <p class="hero__form-date">Insert today date</p>
-              </form>
+
+                <form
+                  class="hero__form"
+                  name="signup_form"
+                  autocomplete="on"
+                  id="order"
+                >
+                  <label>
+                    <input
+                      class="hero_form-name hero__form-input"
+                      type="text"
+                      name="Name"
+                      placeholder="Name"
+                      required
+                    />
+                  </label>
+                  <label>
+                    <input
+                      class="hero_form-phone hero__form-input"
+                      type="tel"
+                      pattern="\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                      title="+38(0__)___-__-__"
+                      placeholder="+38(0__)___-__-__"
+                      name="hero_form-phone"
+                      id="hero_form-phone"
+                      required
+                    />
+                  </label>
+                  <button class="hero__form-submit" type="submit">Order</button>
+                  <p class="hero__form-date">Order date: <span class="today-date">17.11.2021</span></p>
+                </form>
+              </div> 
             </div>
           </div>
         </section>
@@ -110,7 +116,7 @@
     <main>
       <section class="about section" id="about">
         <div class="container">
-          <h2 class="about__title section-title" id="about">
+          <h2 class="about__title section-title">
             From the manufacturer
           </h2>
           <ul class="about__list">
@@ -122,9 +128,9 @@
                   alt="Sleeping cat"
                 />
                 <div class="about__list-item-card-descr">
-                  <h4 class="about__list-item-card-descr-title">
+                  <h3 class="about__list-item-card-descr-title">
                     Keep Calm and Carry On
-                  </h4>
+                  </h3>
                   <div class="about__list-item-card-descr-content">
                     Are you searching for a better way to ease your pet's
                     separation anxiety or stress? Calming chews help relieve pet
@@ -177,7 +183,7 @@
 
       <section class="result section" id="result">
         <div class="container">
-          <h2 class="result__title section-title" id="result">
+          <h2 class="result__title section-title">
             Best Uses for Calming Chews
           </h2>
           <div class="result__descr-wrapper">
