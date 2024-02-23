@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
 })
 
 
-const initialTime = 20 * 1000; // 20 секунд в миллисекундах
+const initialTime = 2 * 60 * 60 * 1000; // 20 секунд в миллисекундах
 const timerElement = document.querySelector('.hero__form-timer');
 let startTime = localStorage.getItem('timerStartTime');
 let timerUsed = localStorage.getItem('timerUsed');
