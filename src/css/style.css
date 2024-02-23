@@ -119,7 +119,7 @@ body {
   border: none;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .nav {
     display: flex;
     justify-content: space-around;
@@ -128,7 +128,7 @@ body {
   }
 
   .logo-wrapper {
-    background-image: url("../images/header/clouds-nav.webp") ;
+    background-image: url("../images/header/clouds-nav.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -140,7 +140,7 @@ body {
     justify-content: space-between;
     gap: 51px;
     padding: 36px 66px;
-    background-image: url('../images/header/clouds-nav.webp');
+    background-image: url("../images/header/clouds-nav.webp");
     background-size: cover;
 
     visibility: visible;
@@ -164,6 +164,10 @@ body {
 
 .hero {
   padding-bottom: 30px;
+}
+
+.cats {
+  display: none;
 }
 
 .hero__wrapper {
@@ -333,6 +337,77 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .cats {
+    display: block;
+    position: absolute;
+    left: 21%;
+    top: 17%;
+    z-index: 5;
+  }
+  .hero__title {
+    color: #f9e994;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 578px;
+    margin: 0 auto 8px;
+  }
+
+  .hero__subtitle {
+    color: #f6f7e4;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+  .hero__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 444px;
+  }
+
+  .hero-subwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 439px;
+    height: 462px;
+  }
+
+  .hero__descr {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 439px;
+    height: 428px;
+    gap: 106px;
+    /* justify-content: space-between; */
+  }
+
+  .hero__form-wrapper {
+    width: 270px;
+  }
+
+  .hero__features-list {
+    width: 323px;
+    padding: 35px 35px 38px 35px;
+    margin: 0;
+  }
+
+  .hero__features-list-item {
+    color: #dfe4de;
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+
 /* #endregion */
 
 /* #region about */
@@ -394,8 +469,6 @@ body {
 
   font-weight: normal;
 }
-
-
 
 .about__list-item-card-descr {
   display: flex;
@@ -723,9 +796,9 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
-.result {
-  padding-bottom: 124px;
-}
+  .result {
+    padding-bottom: 124px;
+  }
 
   .result__descr-wrapper {
     flex-direction: row;
