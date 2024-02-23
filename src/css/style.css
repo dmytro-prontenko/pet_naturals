@@ -131,6 +131,7 @@ body {
     background-image: url("../images/header/clouds-nav.webp") ;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 36px 66px;
   }
 
@@ -195,7 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 20px;
   background: #7fb3e1;
@@ -235,7 +236,7 @@ body {
 }
 
 .hero__form-wrapper {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 21px;
