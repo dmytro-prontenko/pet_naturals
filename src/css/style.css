@@ -549,9 +549,9 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition-duration-450)
+  transition: opacity var(--transition-duration-850)
       var(--transition-timing-function),
-    visibility var(--transition-duration-450) var(--transition-timing-function);
+    visibility var(--transition-duration-850) var(--transition-timing-function);
 }
 .mobile-modal.is-open {
   opacity: 1;
