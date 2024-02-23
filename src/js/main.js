@@ -5,6 +5,7 @@ const openMenuBtn = document.querySelector(".js-open-menu");
 const closeMenuBtn = document.querySelector(".js-close-menu");
 const menuLinks = document.querySelectorAll(".mobile-modal-link");
 const phone = document.querySelector(".hero_form-phone");
+const orderBtn = document.querySelector(".hero__form-submit")
 const body = document.body;
 
 const todayNode = document.querySelector(".today-date")
@@ -56,3 +57,60 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 })
+
+
+const initialTime = 20 * 1000; // 20 секунд в миллисекундах
+const timerElement = document.querySelector('.hero__form-timer');
+let startTime = localStorage.getItem('timerStartTime');
+let timerUsed = localStorage.getItem('timerUsed');
+let remainingTime = initialTime; // Инициализируем оставшееся время значением по умолчанию
+
+function updateTimer() {
+  const currentTime = Date.now();
+  const elapsedTime = currentTime - startTime;
+  remainingTime = initialTime - elapsedTime;
+
+  if (remainingTime > 0) {
+    const seconds = Math.floor((remainingTime / 1000) % 60);
+    const minutes = Math.floor((remainingTime / 1000 / 60) % 60);
+    const hours = Math.floor((remainingTime / 1000 / 60 / 60) % 24);
+
+    const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    orderBtn.disabled=false;
+    timerElement.textContent = formattedTime;
+    localStorage.setItem('remainingTime', remainingTime); // Сохраняем оставшееся время
+  } else {
+    clearInterval(timerInterval);
+    timerElement.textContent = 'Time\'s up!';
+    orderBtn.disabled=true;
+    // localStorage.removeItem('timerStartTime');
+  }
+}
+
+if (startTime) {
+  startTime = parseInt(startTime, 10);
+  const elapsedTime = Date.now() - startTime;
+
+  if (elapsedTime < initialTime) {
+    remainingTime = initialTime - elapsedTime; // Устанавливаем оставшееся время на основе прошедшего времени
+  } else {
+    startTime = null;
+    localStorage.removeItem('timerStartTime');
+  }
+}
+
+if (!startTime && !timerUsed) {
+  startTime = Date.now();
+  localStorage.setItem('timerStartTime', startTime);
+  localStorage.setItem('timerUsed', true);
+}
+
+const timerInterval = setInterval(updateTimer, 1000);
+
+updateTimer();
+
+
+
+
+
