@@ -419,6 +419,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 30px;
 }
 
 .about__title {
@@ -435,24 +436,9 @@ body {
   gap: 20px;
 }
 
-@media screen and (min-width: 1140px) {
-  .about__list {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-}
-
 .about__list-item {
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (min-width: 1140px) {
-  .about__list-item {
-    width: 305px;
-  }
 }
 
 .about__list-item-card {
@@ -473,35 +459,13 @@ body {
 .about__list-item-card-descr {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 15px;
 
   border-radius: 20px;
   background: rgba(161, 211, 55, 0.4);
   padding: 0 16px 0 16px;
-}
-
-@media screen and (min-width: 1140px) {
-  .about {
-    padding: 100px 0;
-  }
-
-  .about__list-item-card-image {
-    /* width: 100%; */
-  }
-
-  .about__list-item-card {
-    height: 439px;
-  }
-
-  .about__list-item-card-descr {
-    gap: 19px;
-  }
-
-  .about__list-item-card-descr {
-    height: 218px;
-  }
 }
 
 .about__list-item-card-descr-title {
@@ -511,19 +475,60 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
+  padding-top: 10px;
 }
 
 .about__list-item-card-descr-content {
   line-height: 18px;
+  color: #483c08;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0;
+  /* line-height: normal; */
+}
+
+@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1140px) {
+  .about {
+    padding: 100px 0;
+  }
+
+  .about__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about__list-item-card {
+    height: 439px;
+  }
+
+  .about__list-item {
+    width: 305px;
+  }
+
+  .about__list-item-card-descr {
+    padding-top: 21px;
+    gap: 19px;
+  }
+
+  .about__list-item-card-descr {
+    height: 218px;
+  }
+
   .about__list-item-card-descr-content {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
     width: 243px;
+  }
+  .about__list-item-card-descr-title {
+    padding-top: 0;
   }
 }
 
