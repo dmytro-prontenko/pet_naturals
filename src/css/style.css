@@ -1,5 +1,5 @@
 :root {
-  --transition-duration-850: 850ms;
+  --transition-duration-250: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -594,9 +594,9 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition-duration-850)
+  transition: opacity var(--transition-duration-250)
       var(--transition-timing-function),
-    visibility var(--transition-duration-850) var(--transition-timing-function);
+    visibility var(--transition-duration-250) var(--transition-timing-function);
 }
 .mobile-modal.is-open {
   opacity: 1;
@@ -655,7 +655,7 @@ body {
   fill: url(#linear);
 }
 .modal-logo-text {
-  transition: color var(--transition-duration-450)
+  transition: color var(--transition-duration-250)
     var(--transition-timing-function);
 }
 .modal-logo-text:hover,
@@ -674,7 +674,7 @@ body {
 }
 .mobile-modal-btn-icon {
   stroke: currentColor;
-  transition: stroke 250ms var(--transition-duration-450)
+  transition: stroke 250ms var(--transition-duration-250)
     var(--transition-timing-function);
 }
 /* .mobile-modal-btn-icon:hover,
@@ -698,7 +698,7 @@ body {
   text-transform: uppercase;
 }
 .mobile-modal-link {
-  transition: color var(--transition-duration-450)
+  transition: color var(--transition-duration-250)
     var(--transition-timing-function);
 
   color: #715d00;
